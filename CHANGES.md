@@ -12,6 +12,11 @@
   The provided directories restrict the worskpace description to those
   directories. (#6107, fixes #3893, @esope)
 
+- [ctypes] always re-run `pkg-config` because we aren't tracking its external
+  dependencies (#6052)
+
+- [ctypes] remove dependency on configurator in the generated rules (#6052)
+
 - Add a terminal persistence mode that attempts to clear the terminal history.
   It is enabled by setting terminal persistence to
   `clear-on-rebuild-and-flush-history` (#6065, @rgrinberg)
